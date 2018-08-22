@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: BMitra;
+    src: url("../font/BMitra.ttf");
+}
+
+@font-face {
+    font-family: IRANSans;
+    src: url("../font/IRANSans.ttf");
+}
+
+body {
+    font-family: IRANSans !important;
+}
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    direction: rtl;
+}
+
+#intro {
+    background: url("../img/bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*#logo {
+    position: absolute;
+    background-color: #17a2b8;
+    padding-top: 15%;
+    margin-right: 4%;
+}*/
+
+.navbar-nav {
+    padding-right: 20rem;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 0.5rem;
+}
+
