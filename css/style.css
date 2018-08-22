@@ -36,11 +36,32 @@ header,
     margin-right: 4%;
 }*/
 
-.navbar-nav {
-    padding-right: 20rem;
+@media (max-width: 768px) {
+    #intro {
+        direction: ltr;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    nav li, nav > div > a {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    nav > div > a {
+        margin-top: 200px;
+    }
 }
 
-.navbar-nav .nav-item {
-    margin-left: 0.5rem;
+@media (min-width: 768px) {
+    nav ul {
+        padding-right: 20rem;
+    }
+
+    nav .nav-item {
+        margin-left: 0.5rem;
+    }
 }
 
