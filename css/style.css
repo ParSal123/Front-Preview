@@ -43,6 +43,15 @@ header,
     margin-right:-1%;
 }
 
+@media (max-width: 576px) {
+    body {
+        font-size: 0.9rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
 @media (max-width: 768px) {
     #intro {
         direction: ltr;
@@ -58,7 +67,7 @@ header,
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 792px) {
     nav ul {
         padding-right: 15%;
     }
