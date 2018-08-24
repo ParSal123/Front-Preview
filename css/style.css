@@ -29,6 +29,11 @@ header,
     background-size: 100% 100%;
 }
 
+#intro .card {
+    background-color: rgba(0, 0, 0, .3);
+    text-shadow: 2px 2px #000;
+}
+
 .farsi-text {
     text-align: right;
 }
