@@ -18,6 +18,15 @@
     background-size: cover;
 }
 
+.header-wrapper {
+    height: 100%;
+    display: grid;
+}
+
+.header-wrapper h1 {
+    padding: 5% 0;
+}
+
 #services .col-md {
     height: 35vh;
     padding-right: 0;
@@ -72,5 +81,29 @@ body {
     .navbar-brand img {
         width: 30%;
     }
+}
+
+.text-navy-blue {
+    color: #1c3861;
+}
+
+.bg-navy-blue {
+    background-color: #1c3861;
+}
+
+.text-light-blue {
+    color: #edf1ff;
+}
+
+.bg-light-blue {
+    background-color: #edf1ff;
+}
+
+.text-red {
+    color: #ed344b;
+}
+
+.bg-red {
+    background-color: #ed344b;
 }
 
