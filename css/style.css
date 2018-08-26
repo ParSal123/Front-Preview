@@ -34,6 +34,19 @@ body {
     text-align: right;
 }
 
+.nav-item {
+    border-bottom: solid 1px transparent;
+    margin-bottom: 5%;
+    transition: border-bottom-color 1000ms;
+    -webkit-transition: border-bottom-color 1000ms;
+}
+
+.nav-item.active, .nav-item:hover{
+    border-bottom: solid 1px white;
+    transition: border-bottom-color 1000ms;
+    -webkit-transition: border-bottom-color 1000ms;
+}
+
 @media (min-width: 1200px) {
     aside {
         position: fixed !important;
@@ -44,6 +57,10 @@ body {
 @media (max-width: 1200px) {
     aside {
         position: static;
+    }
+
+    .navbar-brand img {
+        width: 30%;
     }
 }
 
