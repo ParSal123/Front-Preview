@@ -84,26 +84,26 @@ body {
 }
 
 .text-navy-blue {
-    color: #1c3861;
+    color: #1c3861 !important;
 }
 
 .bg-navy-blue {
-    background-color: #1c3861;
+    background-color: #1c3861 !important;
 }
 
 .text-light-blue {
-    color: #edf1ff;
+    color: #edf1ff !important;
 }
 
 .bg-light-blue {
-    background-color: #edf1ff;
+    background-color: #edf1ff !important;
 }
 
 .text-red {
-    color: #ed344b;
+    color: #ed344b !important;
 }
 
 .bg-red {
-    background-color: #ed344b;
+    background-color: #ed344b !important;
 }
 
