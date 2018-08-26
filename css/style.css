@@ -21,37 +21,8 @@ body {
     direction: rtl;
 }
 
-html,
-body,
-header,
-#intro {
-    height: 100%;
-}
-
-#intro {
-    background: url("../img/bg-blue.png") no-repeat center center fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-}
-
-#intro .card {
-    background-color: rgba(0, 0, 0, .3);
-    text-shadow: 2px 2px #000;
-}
-
 .farsi-text {
     text-align: right;
-}
-
-#logo {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    width: 10%;
-    border-radius: 35px;
-    padding-top: 1%;
 }
 
 @media (min-width: 1200px) {
