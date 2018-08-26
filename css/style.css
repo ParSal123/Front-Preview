@@ -18,6 +18,16 @@
     background-size: cover;
 }
 
+#services .col-md {
+    height: 35vh;
+    padding-right: 0;
+    padding-left: 0;
+}
+#services .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 body {
     font-family: IRANSans !important;
 }
