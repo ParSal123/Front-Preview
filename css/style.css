@@ -13,12 +13,19 @@ body {
     font-family: IRANSans !important;
 }
 
+.dir-ltr {
+    direction: ltr;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
 html,
 body,
 header,
 #intro {
     height: 100%;
-    direction: rtl;
 }
 
 #intro {
@@ -58,7 +65,6 @@ header,
 
 @media (max-width: 768px) {
     #intro {
-        direction: ltr;
     }
 
     nav ul {
