@@ -83,6 +83,10 @@ body {
     }
 }
 
+.list-icon {
+    width: 20%;
+}
+
 .text-navy-blue {
     color: #1c3861 !important;
 }
