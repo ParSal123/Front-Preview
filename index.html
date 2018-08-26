@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,24 +8,49 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Preview</title>
-    
+
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body> 
-    <div class="container-fluid h-100">
-        <aside>
+<body>
+<div class="container-fluid">
+    <div class="row h-100">
+        <aside class="col-12 col-md-2 p-0 bg-dark h-100">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark flex-row flex-md-column">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav flex-row flex-md-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </aside>
-        <main>
-            <section id="intro">
-            </section>
+        <main class="col bg-faded py-3">
+            <section class="h-100"></section>
         </main>
     </div>
+</div>
 
-    <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
