@@ -71,10 +71,6 @@ body {
     -webkit-transition: color 1000ms;
 }
 
-.navbar-brand span{
-    padding: 0 1.5rem;
-}
-
 .navbar-toggler {
     overflow: hidden;
 }
@@ -83,14 +79,31 @@ main section {
     min-height: 100vh;
 }
 
+
+nav li a {
+    transition: background-color 700ms, color 700ms;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: #ed344b !important;
+}
+
 @media (min-width: 1200px) {
+    aside > nav > a {
+        width: 100%;
+    }
     aside {
         position: fixed !important;
         height: 100%;
     }
 
-    .navbar-brand img {
-        padding: 3rem;
+    .navbar-brand span {
+        padding: 1.5rem;
+    }
+
+    #logo-container {
+        padding: 3rem 0;
     }
 
     .navbar-brand span{
@@ -106,11 +119,23 @@ main section {
     aside {
         position: static;
     }
+    
+    aside > nav > a {
+        display: flex !important;
+    }
+
+    .navbar-brand > span {
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto 0;
+    }
+
+    #logo-container {
+        padding: 0;
+    }
 
     .navbar-brand img {
-        width: 30%;
-        padding: 0.5rem;
-        margin-right: -15px;
+        width: 85%;
     }
 }
 
