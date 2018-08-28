@@ -8,6 +8,22 @@
     src: url("../font/IRANSans.ttf");
 }
 
+body {
+    font-family: IRANSans !important;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
+.farsi-text {
+    text-align: right;
+}
+
 #intro {
     height: 100vh;
     background: url("../img/bg.png") no-repeat center center fixed;
@@ -37,20 +53,16 @@
     margin-left: 0;
 }
 
-body {
-    font-family: IRANSans !important;
+#services h5 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
 }
 
-.dir-ltr {
-    direction: ltr;
-}
-
-.dir-rtl {
-    direction: rtl;
-}
-
-.farsi-text {
-    text-align: right;
+.list-icon {
+    width: 20%;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -139,11 +151,6 @@ nav li a:hover {
     }
 }
 
-.list-icon {
-    width: 20%;
-    padding: 0.5rem;
-    margin: 1rem 1rem 6rem 1rem;
-}
 .text-navy-blue {
     color: #1c3861 !important;
 }
