@@ -9,25 +9,28 @@
 
     <title>Preview</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body class="dir-rtl text-farsi">
 
-<aside class="col-xl-2 bg-white">
-    <nav class="navbar navbar-expand-xl navbar-light flex-xl-column p-0">
+<aside class="col-xl-2 bg-navy-blue p-0">
+    <nav class="navbar navbar-expand-xl navbar-dark flex-xl-column p-0">
         <!-- Brand -->
-        <a class="navbar-brand m-0 p-0 farsi-text" href="#">
-            <img src="img/white-logo.png" alt="Logo" class="bg-red">
-            <span class="text-center w-100 pb-4 pt-4">
-                <button class="btn btn btn-outline-dark" type="button">ورود</button>
+        <a class="navbar-brand m-0 p-0" href="#">
+            <div id="logo-container" class="bg-red" style="text-align: center">
+                <img src="img/white-logo.png" alt="Logo">
+            </div>
+            <span class="text-center w-100">
+                <button class="btn btn btn-success" type="button">ورود</button>
             </span>
         </a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#collapsibleNavbar">
+                data-toggle="collapse" data-target="#collapsibleNavbar"
+                style="margin-left: 15px">
             <span class="navbar-toggler-icon"></span>
         </button>
 
