@@ -59,6 +59,10 @@ body {
     margin-bottom: 2rem;
 }
 
+#members img, #members h5 {
+    width: 100%;
+}
+
 .list-icon {
     width: 20%;
     padding: 0.5rem;
