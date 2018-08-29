@@ -100,11 +100,6 @@ nav li a {
     transition: background-color 700ms, color 700ms;
 }
 
-nav li a:hover {
-    background-color: white;
-    color: #ed344b !important;
-}
-
 @media (min-width: 1200px) {
     aside > nav > a {
         width: 100%;
