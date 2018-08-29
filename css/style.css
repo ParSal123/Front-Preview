@@ -1,15 +1,25 @@
 @font-face {
-    font-family: BMitra;
-    src: url("../font/BMitra.ttf");
+  font-family: 'Vazir';
+  src: url('../font/Vazir.eot'); /* IE9 Compat Modes */
+  src: url('../font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/Vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: IRANSans;
-    src: url("../font/IRANSans.ttf");
+  font-family: 'VazirBold';
+  src: url('../font/Vazir-Bold.eot');
+  src: url('../font/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/Vazir-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/Vazir-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 body {
-    font-family: IRANSans !important;
+    font-family: Vazir !important;
+}
+
+h2 {
+    font-family: VazirBold !important;
 }
 
 .dir-ltr {
