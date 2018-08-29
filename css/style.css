@@ -172,12 +172,20 @@ nav li a {
     background-color: #1c3861 !important;
 }
 
+.border-right-navy-blue {
+    border-right: solid #1c3861 5px;
+}
+
 .text-light-blue {
     color: #edf1ff !important;
 }
 
 .bg-light-blue {
     background-color: #edf1ff !important;
+}
+
+.border-right-white {
+    border-right: solid white 5px;
 }
 
 .text-red {
@@ -201,4 +209,3 @@ nav li a {
     width: 30px;
     height: 30px;
 }
-
