@@ -91,13 +91,13 @@
             </ul>
             <div class="d-flex">
                 <div class="mx-auto d-inline-flex my-3" id="contact-icons">
-                    <a href="https://t.me/SenfiCE">
+                    <a href="https://t.me/SenfiCE" data-toggle="tooltip" data-placement="top" title="تلگرام">
                         <i class="telegram-icon m-1"></i>
                     </a>
-                    <a href="mailto:shora.cesharif@gmail.com">
+                    <a href="mailto:shora.cesharif@gmail.com" data-toggle="tooltip" data-placement="top" title="ایمیل">
                         <i class="email-icon m-1"></i>
                     </a>
-                    <a href="https://t.me/shora_ce">
+                    <a href="https://t.me/shora_ce" data-toggle="tooltip" data-placement="top" title="کانال تلگرام">
                         <i class="channel-icon m-1"></i>
                     </a>
                 </div>
@@ -281,6 +281,11 @@
 <!-- SCRIPTS -->
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 </body>
 
 </html>
