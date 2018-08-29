@@ -148,6 +148,10 @@ nav li a {
     .navbar-brand img {
         width: 85%;
     }
+
+    #contact-icons {
+        margin: auto 0;
+    }
 }
 
 .text-navy-blue {
@@ -172,5 +176,19 @@ nav li a {
 
 .bg-red {
     background-color: #ed344b !important;
+}
+
+.telegram-icon, .channel-icon {
+    background: url("../img/icon/telegram.svg");
+}
+
+.email-icon {
+    background: url("../img/icon/send.svg");
+}
+
+.telegram-icon, .channel-icon, .email-icon{
+    display: block;
+    width: 30px;
+    height: 30px;
 }
 
