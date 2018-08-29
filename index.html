@@ -112,9 +112,15 @@
             <div class="container text-center m-auto">
                 <img src="img/white-logo.png" alt="Logo" class="mx-auto d-block">
                 <h1 class="text-white">شورای صنفی دانشکده&zwnj;ی مهندسی کامپیوتر</h1>
-                <a role="button" class="btn btn-outline-light"
-                   href="#about-us"> درباره&zwnj;ی ما</a>
-                <a role="button" class="btn btn-outline-light" href="#members">
+                <a role="button" class="btn btn-outline-light" onclick="about_us.scrollIntoView(
+        {
+            behavior:'smooth',
+        });">
+                    اعضای شورا</a>
+                <a role="button" class="btn btn-outline-light" onclick="members.scrollIntoView(
+        {
+            behavior:'smooth',
+        });">
                     اعضای شورا</a>
             </div>
         </div>
@@ -273,7 +279,7 @@
         </div>
     </section>
     <!-- About us -->
-    <section class="bg-light-blue pt-4" id="about-us">
+    <section class="bg-light-blue pt-4" id="about_us">
         <div class="container py-3">
             <h2 class="my-4 px-4  text-navy-blue border-right-navy-blue">درباره&zwnj;ی شورا</h2>
             <p> شورای صنفی دانشگاه که بعدها به شورای صنفی رفاهی دانشجویان تغییر نام یافت، یکی از سازمان‌های دانشگاه است
@@ -299,6 +305,7 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
+
 </script>
 </body>
 
