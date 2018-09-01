@@ -222,7 +222,7 @@ nav li a {
 }
 
 @media (min-width: 1200px) {
-    aside > nav > a {
+    aside > nav > .navbar-brand {
         width: 100%;
     }
 
@@ -253,7 +253,7 @@ nav li a {
         position: static;
     }
 
-    aside > nav > a {
+    aside > nav > .navbar-brand {
         display: flex !important;
     }
 
