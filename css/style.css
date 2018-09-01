@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Vazir';
-  src: url('../font/Vazir.eot'); /* IE9 Compat Modes */
-  src: url('../font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Vazir.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'Vazir';
+    src: url('../font/Vazir.eot'); /* IE9 Compat Modes */
+    src: url('../font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../font/Vazir.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
-  font-family: 'VazirBold';
-  src: url('../font/Vazir-Bold.eot');
-  src: url('../font/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../font/Vazir-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../font/Vazir-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-family: 'VazirBold';
+    src: url('../font/Vazir-Bold.eot');
+    src: url('../font/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../font/Vazir-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../font/Vazir-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 body {
@@ -79,7 +79,7 @@ h2 {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover {
     color: #ed344b !important;
 }
 
@@ -101,7 +101,6 @@ main section {
     min-height: 100vh;
 }
 
-
 nav li a {
     transition: background-color 700ms, color 700ms;
 }
@@ -110,6 +109,7 @@ nav li a {
     aside > nav > a {
         width: 100%;
     }
+
     aside {
         position: fixed !important;
         height: 100%;
@@ -123,7 +123,7 @@ nav li a {
         padding: 3rem 0;
     }
 
-    .navbar-brand span{
+    .navbar-brand span {
         display: block;
     }
 
@@ -136,7 +136,7 @@ nav li a {
     aside {
         position: static;
     }
-    
+
     aside > nav > a {
         display: flex !important;
     }
@@ -192,7 +192,7 @@ nav li a {
     background-color: #ed344b !important;
 }
 
-.telegram-icon{
+.telegram-icon {
     background: url("../img/icon/paper-plane.svg");
 }
 
@@ -204,7 +204,7 @@ nav li a {
     background: url("../img/icon/email.svg");
 }
 
-.telegram-icon, .channel-icon, .email-icon{
+.telegram-icon, .channel-icon, .email-icon {
     display: block;
     width: 30px;
     height: 30px;
