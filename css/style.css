@@ -1,17 +1,13 @@
 @font-face {
     font-family: 'Vazir';
     src: url('../font/Vazir.eot'); /* IE9 Compat Modes */
-    src: url('../font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../font/Vazir.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../font/Vazir.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/Vazir.woff') format('woff'), /* Pretty Modern Browsers */ url('../font/Vazir.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'VazirBold';
     src: url('../font/Vazir-Bold.eot');
-    src: url('../font/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../font/Vazir-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../font/Vazir-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('../font/Vazir-Bold.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/Vazir-Bold.woff') format('woff'), /* Pretty Modern Browsers */ url('../font/Vazir-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 body {
@@ -95,6 +91,126 @@ h2 {
 
 .navbar-toggler {
     overflow: hidden;
+}
+
+
+/* timeline */
+.timeline {
+    direction: ltr;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline h2 {
+    color: #1c3861;
+}
+
+.timeline p {
+    direction: rtl;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.5px;
+}
+
+.entry {
+    padding: 1rem 3rem;
+    position: relative;
+    width: 50%;
+}
+
+.entry::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: -1rem;
+    background-color: white;
+    border: 4px solid #ed344b;
+    top: 1.75rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.entry:nth-child(odd) {
+    left: 0;
+}
+
+.entry:nth-child(even) {
+    left: 50%;
+}
+
+.entry:nth-child(odd)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 2rem;
+    width: 0;
+    z-index: 1;
+    border: solid transparent;
+    border-width: .75rem .75rem 0.75rem;
+    border-left-color: white;
+}
+
+.entry:nth-child(even)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 2rem;
+    width: 0;
+    z-index: 1;
+    left: 2.25rem;
+    border: solid transparent;
+    border-width: .75rem .75rem 0.75rem 0;
+    border-right-color: white;
+}
+
+.entry:nth-child(even)::after {
+    left: -1rem;
+}
+
+.content {
+    padding: 1.5rem 2rem;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .timeline::after {
+        left: 100%;
+        margin-left: -5px;
+    }
+
+    .entry {
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 3rem;
+    }
+
+    .entry::before {
+        left: auto !important;
+        border: solid transparent !important;
+        border-width: .75rem .75rem 0.75rem !important;
+        border-left-color: white !important;
+    }
+
+    .entry:nth-child(odd)::after, .entry:nth-child(even)::after {
+        left: auto;
+        margin-right: 2.5px;
+    }
+
+    .entry:nth-child(even) {
+        left: 0%;
+    }
 }
 
 main section {
