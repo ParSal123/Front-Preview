@@ -83,6 +83,18 @@ h2 {
     text-align: justify;
 }
 
+#about_us .container {
+    height: calc(100vh - 6rem);
+    position: relative;
+}
+
+#about_us .container .col-md-10 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .list-icon {
     width: 20%;
     padding: 0.5rem;
@@ -110,7 +122,6 @@ h2 {
 .navbar-toggler {
     overflow: hidden;
 }
-
 
 /* timeline */
 .timeline {
@@ -342,7 +353,7 @@ nav li a {
     background: url("../img/icon/email.svg");
 }
 
-#contact-icons i{
+#contact-icons i {
     display: block;
     width: 22px;
     height: 22px;
