@@ -1,3 +1,9 @@
+:root {
+    --navy-blue: #1c3861;
+    --light-blue: #edf1ff;
+    --my-red: #ed344b;
+}
+
 @font-face {
     font-family: 'Vazir';
     src: url('../font/Vazir.eot'); /* IE9 Compat Modes */
@@ -66,14 +72,14 @@ h2 {
 }
 
 #about_us {
-    background: url("../img/shora_room.jpg") no-repeat center center scroll;
+    background: url("../img/shora_room.png") no-repeat center center scroll;
     background-size: cover;
     line-height: 1.8;
 }
 
 #about_us .col-md-10 {
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(28, 56, 97, 0.6);
 }
 
 .list-icon {
@@ -144,7 +150,7 @@ h2 {
     height: 2rem;
     right: -1rem;
     background-color: white;
-    border: 4px solid white;
+    border: 4px solid #ed344b;
     top: 1.75rem;
     border-radius: 50%;
     z-index: 1;
