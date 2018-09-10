@@ -122,12 +122,26 @@ h2 {
     width: 100%;
 }
 
-.locker {
-    width: 15%;
-    height: 5%;
-    background-color: white;
-    margin: 10px;
-    display: block;
+.locker-btn {
+    width: 5%;
+    height: 2vw;
+}
+
+.locker .row {
+    min-height: 20vh;
+}
+
+.locker .col {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 20vh;
+    cursor: pointer;
+}
+
+#lockerC, #lockerD, #lockerE, #lockerF, #lockerI, #lockerJ, #lockerO, #lockerP {
+    width: 2vw;
+    height: 4vw;
+    text-align: center;
 }
 
 /* timeline */
