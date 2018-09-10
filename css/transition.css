@@ -1,63 +1,80 @@
-
-.show-notif:nth-child(odd)
-{
-
-    opacity: 1;
-    -webkit-animation: showodd 1s forwards ;
-    -o-animation: showodd 1s forwards ;
-    animation: showodd 1s forwards ;
-}
-.show-notif:nth-child(even)
-{
-    opacity: 1;
-    -webkit-animation: showeven 1s forwards ;
-    -o-animation: showeven 1s forwards ;
-    animation: showeven 1s forwards ;
-}
-.show-notif:nth-child(even)::before
-{
-    opacity: 1;
-    -webkit-animation: showevent 1s forwards ;
-    -o-animation: showevent 1s forwards ;
-    animation: showevent 1s forwards ;
-}
-
-@keyframes showodd {
-    from{
-        padding-left: 6rem;
-        padding-right: 0rem;
-        opacity: 0;
-    }
-    to
-    {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        opacity: 1;
-    }
-}
-@keyframes showeven {
-    from{
-        padding-left: 0rem;
-        padding-right: 6rem;
-        opacity: 0;
-    }
-    to
-    {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        opacity: 1;
-    }
-}
-@keyframes showevent {
-    from{
-        left: -.75rem;
-    }
-    to
-    {
-        left: 2.25rem;
-    }
-}
-
 .entry {
     visibility: hidden;
+}
+@media screen and (min-width: 769px) {
+    .show-notif:nth-child(odd) {
+        opacity: 1;
+        -webkit-animation: showodd 1s forwards;
+        -o-animation: showodd 1s forwards;
+        animation: showodd 1s forwards;
+    }
+
+    .show-notif:nth-child(even) {
+        opacity: 1;
+        -webkit-animation: showeven 1s forwards;
+        -o-animation: showeven 1s forwards;
+        animation: showeven 1s forwards;
+    }
+
+    .show-notif:nth-child(even)::before {
+        opacity: 1;
+        -webkit-animation: showevent 1s forwards;
+        -o-animation: showevent 1s forwards;
+        animation: showevent 1s forwards;
+    }
+
+    @keyframes showodd {
+        from {
+            padding-left: 6rem;
+            padding-right: 0rem;
+            opacity: 0;
+        }
+        to {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            opacity: 1;
+        }
+    }
+
+    @keyframes showeven {
+        from {
+            padding-left: 0rem;
+            padding-right: 6rem;
+            opacity: 0;
+        }
+        to {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            opacity: 1;
+        }
+    }
+
+    @keyframes showevent {
+        from {
+            left: -.75rem;
+        }
+        to {
+            left: 2.25rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .show-notif {
+        opacity: 1;
+        -webkit-animation: showodd 1s forwards;
+        -o-animation: showodd 1s forwards;
+        animation: showodd 1s forwards;
+    }
+    @keyframes showodd {
+        from {
+            padding-left: 6rem;
+            padding-right: 0rem;
+            opacity: 0;
+        }
+        to {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            opacity: 1;
+        }
+    }
 }
