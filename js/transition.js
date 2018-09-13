@@ -13,10 +13,9 @@ var notifs = $(".entry");
 win.scroll(function(event) {
 
     notifs.each(function(i, el) {
-        var el = $(el);
-        if (visible(el)) {
-            el.css("visibility","visible");
-            el.addClass("show-notif");
+        if (visible($(el))) {
+            $(el).css("visibility","visible");
+            $(el).addClass("show-notif");
         }
     });
 
