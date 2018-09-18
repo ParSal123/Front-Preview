@@ -11,15 +11,18 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-<style>
-    .entry::after {
-        background-color: #ed344b;
-        border-color: #1c3861;
-    }
-    .timeline::after {
-        background-color: #ed344b;
-    }
-</style>
+    <link href="css/transition.css" rel="stylesheet">
+
+    <style>
+        .entry::after {
+            background-color: #ed344b;
+            border-color: #1c3861;
+        }
+
+        .timeline::after {
+            background-color: #ed344b;
+        }
+    </style>
 
 </head>
 
@@ -152,15 +155,23 @@
         </div>
     </section>
 
-<!-- SCRIPTS -->
-<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            notifs.each(function(i, el) {
+                if (visible($(el))) {
+                    $(el).css("visibility","visible");
+                    $(el).addClass("show-notif");
+                }
+            });
 
-</script>
+        });
+
+    </script>
 </body>
 
 </html>

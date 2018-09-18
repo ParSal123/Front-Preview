@@ -7,16 +7,16 @@ function visible(el) {
     return( bottom_of_window > bottom_of_object );
 }
 
-var win = $(window);
-var notifs = $(".entry");
 
-win.scroll(function(event) {
-
+function announcementShow(event)
+{
+    var win = $(window);
+    var notifs = $(".entry");
     notifs.each(function(i, el) {
         if (visible($(el))) {
             $(el).css("visibility","visible");
             $(el).addClass("show-notif");
         }
     });
-
-});
+}
+win.scroll(announcementShow(event));
