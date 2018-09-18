@@ -6,9 +6,16 @@ function visible(el) {
 
     return( bottom_of_window > bottom_of_object );
 }
+function halfVisible(el) {
+    var bottom_of_object = $(el).offset().top + $(el).outerHeight()*2/3;
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
 
+    /* If the object is completely visible in the window, fade it in */
 
-function announcementShow(event)
+    return( bottom_of_window > bottom_of_object );
+}
+
+function showAnnouncements(event)
 {
     var win = $(window);
     var notifs = $(".entry");
@@ -19,4 +26,15 @@ function announcementShow(event)
         }
     });
 }
-win.scroll(announcementShow(event));
+$(window).scroll(showAnnouncements);
+function showMembers(event) {
+    var win = $(window);
+    var members = $(".memberHidden");
+    members.each(function(i, el) {
+        if (halfVisible($(el))) {
+            $(el).css("visibility","visible");
+            $(el).hide().fadeIn();
+            $(el).removeClass("memberHidden");
+        }
+    });
+}

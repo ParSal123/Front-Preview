@@ -154,7 +154,7 @@
             </div>
         </div>
     </section>
-
+</main>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
@@ -162,12 +162,7 @@
     <script>
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
-            notifs.each(function(i, el) {
-                if (visible($(el))) {
-                    $(el).css("visibility","visible");
-                    $(el).addClass("show-notif");
-                }
-            });
+            showAnnouncements(event);
 
         });
 
