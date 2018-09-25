@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8">
@@ -125,18 +125,24 @@
     <main class="col-xl-10 mr-auto p-0 text-right">
         <section class="bg-navy-blue py-5">
             <div class="container">
-                <h2 class="mb-4 mx-2 px-4 text-red border-right-red">اطلاعیه ها</h2>
+                <h2 class="mb-4 mx-2 px-4 text-white border-right-white">اطلاعیه ها</h2>
                 <div class="timeline mx-2">
                     <span class="line"></span>
-                    <div class="entry" v-for="(item,index) in announcements" v-if="index<itemsShown" v-bind:class="{addedNotif:index>=3}">
+                    <article class="entry" v-for="(item,index) in announcements" v-if="index<itemsShown"
+                         v-bind:class="{addedNotif:index>=3}">
                         <div class="content">
                             <h2>{{item.title}}</h2>
                             <p>{{item.text}}</p>
-                            <a role="button" class="btn btn-sm btn-primary" href="#">ادامه</a>
+                            <a role="button" class="btn btn-sm btn-primary" href="article.html">ادامه</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <button id="moreItems" class="btn btn-outline-primary" v-if="itemsShown<announcements.length">بازم بیار</button>
+                <div class="mt-4 text-center">
+                    <button id="moreItems" class="btn btn-outline-light" v-if="itemsShown<announcements.length">بازم
+                        بیار
+                    </button>
+                </div>
+
             </div>
         </section>
     </main>
