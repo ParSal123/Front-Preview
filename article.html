@@ -14,13 +14,36 @@
     <link href="css/transition.css" rel="stylesheet">
 
     <style>
-        .entry::after {
+        .single-entry::after {
             background-color: #ed344b;
             border-color: #1c3861;
         }
 
         .timeline::after {
             background-color: #ed344b;
+        }
+
+        .timeline .line {
+            left: 100%;
+            margin-left: -5px;
+        }
+
+        .single-entry {
+            width: 100%;
+            padding-left: 0rem;
+            padding-right: 3rem;
+        }
+
+        .single-entry::before {
+            left: auto !important;
+            border: solid transparent !important;
+            border-width: .75rem .75rem 0.75rem !important;
+            border-left-color: white !important;
+        }
+
+        .single-entry:nth-child(even)::after {
+            left: auto;
+            margin-right: 2.5px;
         }
     </style>
 
@@ -91,8 +114,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">خانه</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">اطلاعیه&zwnj;ها</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="announcements.html">اطلاعیه&zwnj;ها</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ثبت گزارش</a>
@@ -123,50 +146,38 @@
 
 <main class="col-xl-10 mr-auto p-0 text-right">
     <section class="bg-navy-blue py-5">
-        <div class="container">
-            <h2 class="mb-4 mx-2 px-4 text-red border-right-red">اطلاعیه ها</h2>
+        <article class="container">
+            <h2 class="mb-4 mx-2 px-4 text-white border-right-white">عنوان</h2>
             <div class="timeline mx-2">
                 <span class="line"></span>
-                <article class="entry">
+                <div class="single-entry">
                     <div class="content">
-                        <h2>فراخوان</h2>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است...</p>
-                        <a role="button" class="btn btn-sm btn-primary" href="article.html">ادامه</a>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در
+                            شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
+                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                            ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط
+                            سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
+                            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
                     </div>
-                </article>
-                <article class="entry">
-                    <div class="content">
-                        <h2>جلسه</h2>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است...</p>
-                        <a role="button" class="btn btn-sm btn-primary" href="article.html">ادامه</a>
-                    </div>
-                </article>
-                <article class="entry">
-                    <div class="content">
-                        <h2>انتخابات</h2>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است...</p>
-                        <a role="button" class="btn btn-sm btn-primary" href="article.html">ادامه</a>
-                    </div>
-                </article>
+                </div>
             </div>
-        </div>
+        </article>
     </section>
 </main>
-    <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-            showAnnouncements(event);
+<!-- SCRIPTS -->
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/transition.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        showAnnouncements(event);
 
-        });
+    });
 
-    </script>
+</script>
 </body>
 
 </html>
