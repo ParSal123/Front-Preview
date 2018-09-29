@@ -171,11 +171,19 @@ h2 {
     .d-padding {
         padding-top: 4% !important;
     }
+
+    .btn-username {
+        display: none !important;
+    }
 }
 
 @media (min-width: 576px) {
     .d-padding {
         padding-top: 2% !important;
+    }
+
+    .dropdown-username {
+        display: none !important;
     }
 }
 
@@ -334,7 +342,7 @@ nav li a {
         height: 100%;
     }
 
-    .navbar-brand span {
+    .navbar-brand .nav-logo-box {
         padding: 1.5rem;
     }
 
@@ -342,7 +350,7 @@ nav li a {
         padding: 3rem 0;
     }
 
-    .navbar-brand span {
+    .navbar-brand .nav-logo-box {
         display: block;
     }
 
@@ -360,7 +368,7 @@ nav li a {
         display: flex !important;
     }
 
-    .navbar-brand > span {
+    .navbar-brand .nav-logo-box {
         padding-left: 0;
         padding-right: 0;
         margin: auto 0;
@@ -370,12 +378,20 @@ nav li a {
         padding: 0;
     }
 
-    .navbar-brand img {
+    .navbar-brand .logo {
         width: 85%;
     }
 
     #contact-icons {
         margin: auto 0;
+    }
+
+    .navbar .dropdown-toggle {
+        text-align: right;
+    }
+
+    .navbar-brand .btn {
+        margin-right: 1rem;
     }
 }
 
