@@ -57,7 +57,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title ml-auto">کمد Letter</h4>
+                <h4 class="modal-title ml-auto" id="locker-title">کمد Letter</h4>
                 <button type="button" class="close ml-0" data-dismiss="modal">&times;</button>
             </div>
 
@@ -169,51 +169,51 @@
                     <div class="locker-container">
                         <div class="d-flex" style="margin-right: 14%; padding: 1.5% 1.5% 0 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerB" style="margin-right: 8%">B</a>
+                               class="btn btn-light locker-btn" id="lockerB" style="margin-right: 8%" onclick='changeLetter("B");'>B</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerA">A</a>
+                               class="btn btn-light locker-btn mr-auto" id="lockerA" onclick='changeLetter("A");'>A</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerP">P</a>
+                               class="btn btn-light locker-btn" id="lockerP" onclick='changeLetter("P");'>P</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerO">O</a>
+                               class="btn btn-light locker-btn" id="lockerO" onclick='changeLetter("O");'>O</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerN">N</a>
+                               class="btn btn-light locker-btn" id="lockerN" onclick='changeLetter("N");'>N</a>
                         </div>
                         <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerC">C</a>
+                               class="btn btn-light locker-btn mr-auto" id="lockerC" onclick='changeLetter("C");'>C</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerM">M</a>
+                               class="btn btn-light locker-btn" id="lockerM" onclick='changeLetter("M");'>M</a>
                         </div>
                         <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerD">D</a>
+                               class="btn btn-light locker-btn mr-auto" id="lockerD" onclick='changeLetter("D");'>D</a>
 
                         </div>
 
                         <div class="d-flex d-padding" style="padding: 0 1.5% 3.5% 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerL">L</a>
+                               class="btn btn-light locker-btn ml-auto" id="lockerL" onclick='changeLetter("L");'>L</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerK">k</a>
+                               class="btn btn-light locker-btn" id="lockerK" onclick='changeLetter("K");'>K</a>
                         </div>
                         <div class="d-flex" style="padding: 0 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerE">E</a>
+                               class="btn btn-light locker-btn" id="lockerE" onclick='changeLetter("E");'>E</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerJ">J</a>
+                               class="btn btn-light locker-btn ml-auto" id="lockerJ" onclick='changeLetter("J");'>J</a>
                         </div>
                         <div class="d-flex" style="padding: 0 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerF">F</a>
+                               class="btn btn-light locker-btn" id="lockerF" onclick='changeLetter("F");'>F</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerI">I</a>
+                               class="btn btn-light locker-btn ml-auto" id="lockerI" onclick='changeLetter("I");'>I</a>
                         </div>
                         <div class="d-flex" style="padding: 3.5% 1.5% 25% 1.5%;">
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerG">G</a>
+                               class="btn btn-light locker-btn" id="lockerG" onclick='changeLetter("G");'>G</a>
                             <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerH">H</a>
+                               class="btn btn-light locker-btn" id="lockerH" onclick='changeLetter("H");'>H</a>
                         </div>
                     </div>
                 </div>
@@ -232,6 +232,7 @@
 <!-- SCRIPTS -->
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/locker.js"></script>
 <script>
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
