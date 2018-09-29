@@ -9,3 +9,8 @@ function changeLetter(ch) {
         $(this).html(lockerLetter+my);
     });
 }
+$(".locker > .row > .col ").click(function () {
+        $("#chosen-locker").val($(this).html());
+        $("#lockerModal").modal('toggle');
+    }
+);
