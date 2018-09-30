@@ -107,22 +107,22 @@
             <span class="w-100 nav-logo-box">
                 <!--guest-->
                 <button class="btn btn-success" type="button" data-toggle="modal"
-                data-target="#loginModal">ورود</button>
+                        data-target="#loginModal">ورود</button>
 
                 <!--logged in-->
                 <!--<div class="d-flex w-100">-->
-                    <!--<div class="dropdown w-100">-->
-                        <!--<div class="btn dropdown-toggle w-100" data-toggle="dropdown">-->
-                            <!--<img class="rounded-circle"-->
-                                 <!--src="https://secure.gravatar.com/avatar/053a38f5dd87f56f5ce1680d0b202d0e.jpg?r=g&d=retro&s=40">-->
-                            <!--<span class="btn-username">باقرآباد</span>-->
-                        <!--</div>-->
-                        <!--<div class="dropdown-menu text-right">-->
-                            <!--<span class="dropdown-item dropdown-username">باقرآباد</span>-->
-                            <!--<a class="dropdown-item" href="#">تغییر گذرواژه</a>-->
-                            <!--<a class="dropdown-item" href="#">خروج</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                <!--<div class="dropdown w-100">-->
+                <!--<div class="btn dropdown-toggle w-100" data-toggle="dropdown">-->
+                <!--<img class="rounded-circle"-->
+                <!--src="https://secure.gravatar.com/avatar/053a38f5dd87f56f5ce1680d0b202d0e.jpg?r=g&d=retro&s=40">-->
+                <!--<span class="btn-username">باقرآباد</span>-->
+                <!--</div>-->
+                <!--<div class="dropdown-menu text-right">-->
+                <!--<span class="dropdown-item dropdown-username">باقرآباد</span>-->
+                <!--<a class="dropdown-item" href="#">تغییر گذرواژه</a>-->
+                <!--<a class="dropdown-item" href="#">خروج</a>-->
+                <!--</div>-->
+                <!--</div>-->
                 <!--</div>-->
 
             </span>
@@ -180,62 +180,78 @@
                 <h2 class="mb-4 mx-2 px-4 text-white border-right-white">رزرو کمد</h2>
                 <div class="form-group">
                     <label for="rules">اول قوانینُ بخون:</label>
-                    <textarea id="rules" class="form-control d-block" readonly>قوانین قوانین قوانین قوانین قوانین قوانین قوانین قوانین قوانین قوانین قوانین قوانین</textarea>
+                    <textarea id="rules" class="form-control d-block" readonly>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</textarea>
                 </div>
                 <div class="form-group custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="agreement" required>
-                    <label for="agreement" class="custom-control-label">قبوله!</label>
+                    <span onclick="lockerSelector.scrollIntoView(
+                                                    {
+                                                        behavior:'smooth',
+                                                        block:'start'
+                                                    });">
+
+                        <input type="checkbox" class="custom-control-input" id="agreement" required>
+                        <label for="agreement" class="custom-control-label">قبوله!</label>
+                    </span>
                 </div>
-                <div class="position-relative dir-ltr map-container form-group">
-                    <!--<img src="img/map.svg" id="map">-->
-                    <div class="locker-container">
-                        <div class="d-flex" style="margin-right: 14%; padding: 1.5% 1.5% 0 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerB" style="margin-right: 8%" onclick='changeLetter("B");'>B</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerA" onclick='changeLetter("A");'>A</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerP" onclick='changeLetter("P");'>P</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerQ" onclick='changeLetter("Q");'>Q</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerN" onclick='changeLetter("N");'>N</a>
-                        </div>
-                        <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerC" onclick='changeLetter("C");'>C</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerO" onclick='changeLetter("O");'>O</a>
-                        </div>
-                        <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn mr-auto" id="lockerD" onclick='changeLetter("D");'>D</a>
+                <div class="form-group" id="lockerSelector">
+                    <label for="locker-map">کمدتو انتخاب کن:</label>
+                    <div class="position-relative dir-ltr map-container form-group" id="locker-map">
+                        <div class="locker-container">
+                            <div class="d-flex" style="margin-right: 14%; padding: 1.5% 1.5% 0 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerB" style="margin-right: 8%"
+                                   onclick='changeLetter("B");'>B</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn mr-auto" id="lockerA"
+                                   onclick='changeLetter("A");'>A</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerP" onclick='changeLetter("P");'>P</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerQ" onclick='changeLetter("Q");'>Q</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerN" onclick='changeLetter("N");'>N</a>
+                            </div>
+                            <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn mr-auto" id="lockerC"
+                                   onclick='changeLetter("C");'>C</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerO" onclick='changeLetter("O");'>O</a>
+                            </div>
+                            <div class="d-flex" style="margin-right: 14%; padding: 0 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn mr-auto" id="lockerD"
+                                   onclick='changeLetter("D");'>D</a>
 
-                        </div>
+                            </div>
 
-                        <div class="d-flex d-padding" style="padding: 0 1.5% 3.5% 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerL" onclick='changeLetter("L");'>L</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerK" onclick='changeLetter("K");'>K</a>
-                        </div>
-                        <div class="d-flex" style="padding: 0 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerE" onclick='changeLetter("E");'>E</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerJ" onclick='changeLetter("J");'>J</a>
-                        </div>
-                        <div class="d-flex" style="padding: 0 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerF" onclick='changeLetter("F");'>F</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn ml-auto" id="lockerI" onclick='changeLetter("I");'>I</a>
-                        </div>
-                        <div class="d-flex" style="padding: 3.5% 1.5% 25% 1.5%;">
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerG" onclick='changeLetter("G");'>G</a>
-                            <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
-                               class="btn btn-light locker-btn" id="lockerH" onclick='changeLetter("H");'>H</a>
+                            <div class="d-flex d-padding" style="padding: 0 1.5% 3.5% 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn ml-auto" id="lockerL"
+                                   onclick='changeLetter("L");'>L</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerK" onclick='changeLetter("K");'>K</a>
+                            </div>
+                            <div class="d-flex" style="padding: 0 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerE" onclick='changeLetter("E");'>E</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn ml-auto" id="lockerJ"
+                                   onclick='changeLetter("J");'>J</a>
+                            </div>
+                            <div class="d-flex" style="padding: 0 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerF" onclick='changeLetter("F");'>F</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn ml-auto" id="lockerI"
+                                   onclick='changeLetter("I");'>I</a>
+                            </div>
+                            <div class="d-flex" style="padding: 3.5% 1.5% 25% 1.5%;">
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerG" onclick='changeLetter("G");'>G</a>
+                                <a href="#" role="button" data-toggle="modal" data-target="#lockerModal"
+                                   class="btn btn-light locker-btn" id="lockerH" onclick='changeLetter("H");'>H</a>
+                            </div>
                         </div>
                     </div>
                 </div>
