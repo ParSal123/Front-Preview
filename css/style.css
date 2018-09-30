@@ -152,7 +152,7 @@ h2 {
     cursor: pointer;
 }
 
-#lockerB, #lockerC, #lockerD, #lockerE, #lockerF, #lockerI, #lockerJ, #lockerM, #lockerN {
+#lockerB, #lockerC, #lockerD, #lockerE, #lockerF, #lockerI, #lockerJ, #lockerO, #lockerN {
     max-width: 3.5%;
     height: 4vw;
     line-height: 3vw;
@@ -163,7 +163,7 @@ h2 {
     max-width: 3% !important;
 }
 
-#lockerA, #lockerO, #lockerP {
+#lockerA, #lockerQ, #lockerP {
     width: 6.5% !important;
 }
 
